@@ -1,0 +1,18 @@
+@use "mixin";
+
+.container {
+  width: 100%;
+  max-width: 320px;
+}
+
+@include tablet {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@include desktop {
+  .container {
+    max-width: 1200px;
+  }
+}

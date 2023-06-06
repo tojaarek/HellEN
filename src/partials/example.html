@@ -1,33 +1,21 @@
-<article class="example">
-  <h1>HTML-fragmenty</h1>
-
-  <!-- Sciezka do zdjęcia z HTML-fragmenta jest taka sama jak z plikuindex.html -->
-  <img src="images/demo.jpg" alt="" width="320" />
-  <p>
-    Plugin
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
+<header>
+  <div>
+    <a>
+      <svg>
+        <use href="./images/icons.svg#icon-logo">
+        </use>
+      </svg>
     </a>
-    pozwala dodawać HTML-pliki stron kod z innych HTML plików(fragmentów). Fragmenty
-    zapisują się w folderze
-    <code>src/partials</code>. Dodanie odbywa się przy komplikacji plików strony, np
-    <code>index.html</code>.
-  </p>
-
-  <p>
-    Ten plik <code>example.html</code> &mdash; przykład takiego fragmentu, który posiada jakiś kod dla strony głównej. To jest bardzo wygodne
-    przy pracy zespołowej podczas projektów studenckich,
-    kidy od razu kilka osób piszę kod w jednym HTML pliku.
-  </p>
-
-  <p>
-    Syntaksys dodania fragmentu do głównego pliku:
-    <code> &lt;include src="./partials/nazwa-pliku.html"&gt;&lt;/include&gt; </code>
-  </p>
-
-  <div class="background"></div>
-</article>
+    <ul>
+      <li><a>Studying program</a></li>
+      <li><a>About</a></li>
+      <li><a>Training options</a></li>
+      <li><a>Contact</a></li>
+    </ul>
+    <button type="button">Consultation by phone</button>
+    <svg class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu" width="20" height="20"
+      role="img">
+      <use href="images/icons.svg#icon-burger"></use>
+    </svg>
+  </div>
+</header>
